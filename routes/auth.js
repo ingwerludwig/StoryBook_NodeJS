@@ -10,9 +10,10 @@ router.get(
     res.redirect('/dashboard')
   }
 )
-router.get('/logout', (req,res) => {
-    req.logout()
-    res.redirect('/')
+
+router.get('/logout', (req, res) => {
+  req.logout()
+  res.redirect('/')
 })
 
 module.exports = router
